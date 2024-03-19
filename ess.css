@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+nav{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+nav ul{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    
+}
+
+nav ul li a{
+    text-transform: capitalize;
+    color: #2a2c41;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #fdbf50;
+}
+
+.actif{
+    color: #fdbf50;
+}
+
+.actif:hover{
+    color: #2a2c41;
+}
+
+.logo{
+    width: 12%;
+    position: relative;
+    left: 6%;
+}
+
+.contact{
+    position: relative;
+    right: 6%;
+}
+
+.contactButton{
+    color: #f4f4f8;
+    padding: 12px 34px;
+    border: 2px solid #fdbf50;
+    border-radius: 30px;
+    background-color: #fdbf50;
+    transition: 0.3s ease;
+}
+
+.contactButton:hover{
+    background-color: transparent;
+    color: #2a2c41;
+}
+
+.content{
+    height: 88vh;
+    width: 100%;
+    background-color: #f4f4f8;
+    background: url("images/4.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftContent{
+    position: relative;
+    left: 7%;
+}
+
+.leftContent span{
+    color: #2a2c41;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.leftContent h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.leftContent p{
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger .bar{
+    width: 35px;
+    height: 3px;
+    background-color: #2a2c41;
+    transition: .3s;
+}
+
+.button{
+    color: #f4f4f8;
+    padding: 12px 34px;
+    border: 2px solid #ff724c;
+    border-radius: 30px;
+    text-transform: capitalize;
+    background-color: rgb(255, 114, 76);
+    transition: 0.3s ease;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: #2a2c41;
+}
+
+.button:last-child{
+    margin-left: 17px;
+    background-color: transparent;
+    color: #2a2c41;
+}
+
+.button:last-child:hover{
+    background-color: #ff724c;
+    color: #f4f4f8;
+}
+
+#pizza3D{
+    height: 600px;
+    width: 600px;
+    position: relative;
+    right: 10%;
+}
+
+@media (max-width: 800px) {
+    .hamburger{
+        display: flex;
+    }
+
+    .menu{
+        display: none;
+    }
+}

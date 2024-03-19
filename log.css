@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 0;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f4f4f8;
+}
+
+.contenus{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenus span{
+    color: #e83939;
+}
+
+.contenus h2{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+
+
+.icon{
+    margin-bottom: 10px;
+}
+
+.icon img{
+    width: 30px;
+}
+
+.icon a img{
+    border: 2px solid #2a2c41;
+    border-radius: 10px;
+    background: #2a2c41;
+    padding: 12px 34px;
+    align-items: center;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.5s ease;
+
+}
+
+.icon a img:hover{
+    background: #e83939;
+    border: 2px solid #e83939;
+}
+
+.contenus .logo{
+    width: 250px;
+
+}
+
+.lg{
+    width: 320px;
+    height: 3px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    background: #fcfcfc62;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    width: 330px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background: rgba(255, 255, 255, 0.425);
+}
+
+.button{
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 12px 34px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+form .button:hover{
+    background: rgba(232, 57, 57, 0.781);
+    color: #fff;
+    border: 2px solid rgba(232, 57, 57, 0.781);
+}
+
+ul{
+    width: 330px;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.liste ul li a{
+    color: #fff;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+
+.liste ul li a:hover{
+    color: rgb(232, 57, 57);
+}

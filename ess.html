@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ess.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <title>FFA | Acceuil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-------Logo du site----->
+            <img src="images/Logoffa.png" alt="Logo" class="logo">
+
+            <!---------Menu de navigation------------>
+            <ul class="menu">
+                <li><a href="index.html" class="actif">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">menu</a></li>
+            </ul>
+
+            <div class="contact">
+                <a href="#" class="contactButton">contact</a>
+            </div>
+
+            <button class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+             </button>
+            
+        </nav>
+
+        <div class="content">
+            <div class="leftContent">
+                <span>welcome to</span>
+                <h2>our wonderfull food <br>collection</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ist</p>
+                
+                <div class="buttons">
+                    <a href="#" class="button">explore menu</a>
+                    <a href="#" class="button">about us</a>
+                </div>
+            </div>
+
+            <div class="rightContent">
+                <model-viewer src="images/pizza.glb" auto-rotate id="pizza3D"></model-viewer>
+            </div>
+        </div>
+    </header>
+
+
+</body>
+</html>

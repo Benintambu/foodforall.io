@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFA | About Us</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="header ">
+
+        <!------barre de navigation-------->
+        <nav class="nav container">
+            <a href="index.html" class="logo"><img src="images/logoFFAW.png" alt="Logo" id="logoF"></a>
+
+            <!--------------Menu de navigation------------------->
+            <div class="nav_menu show-menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li nav_items>
+                        <a href="index.html" class="nav_link">home</a>
+                    </li>
+                    <li nav_items>
+                        <a href="about.html" class="nav_link actif">about</a>
+                    </li>
+                    <li nav_items>
+                        <a href="menu.html" class="nav_link">menu</a>
+                    </li>
+                    <li nav_items>
+                        <a href="contact.html" class="nav_link">contact</a>
+                    </li>
+                </ul>
+
+                <!---------Button Close------------>
+                <img src="images/x (2).png" id="close-button">
+
+            </div>
+
+            <div class="nav_action">
+            <!------Button de recherche--------->
+                <img src="images/chercher (1).png" class="nav_search" id="search_button">
+
+                <img src="images/utilisateur.png" class="nav_login" id="login-button">
+
+                <!--------Button dark-mode------------>
+                <img src="images/lune.png" class="nav_login" id="icon">
+
+                <!--------Toogle Button----------->
+                <img src="images/menu (9).png" id="toggle-button">
+            </div>
+        </nav>
+    </header>
+
+    <div class="search show-search" id="search">
+        <form action="" class="search_form">
+            <img src="images/chercher (1).png" class="search_icon">
+            <input type="search" placeholder="search a menu" class="search_input">
+        </form>
+
+        <img src="images/x (2).png" class="search_close" id="search_close">
+    </div>
+
+    <div class="login show-login" id="login">
+        <form action="index.html" method="post" class="login_form">
+            <h2 class="login_title">log in</h2>
+
+            <div class="login_grp">
+                <div>
+                    <label for="email" class="login_label">email</label>
+                    <input type="email" placeholder="write your email please" id="email" class="login_input">
+                </div>
+                
+                <div>
+                    <label for="password" class="login_label">password</label>
+                    <input type="email" placeholder="enter your password please" id="password" class="login_input">
+                </div>
+            </div>
+
+            <div>
+                <p class="login_signup">
+                    you don't have an account ?
+                    <a href="#">sign up</a>
+                </p>
+
+                <a href="" class="login_forgot">forgot password ?</a>
+
+                <button type="submit" class="login_button">log in</button>
+            </div>
+        </form>
+
+        <img src="images/x (2).png" class="login_close" id="login-close">        
+    </div>
+
+    <section class="content">
+        <div class="content-contenus">
+            <div class="left-content">
+                <h2>about us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione autem <br>ea expedita aliquid, consequuntur quos delectus corrupti dolores reprehenderit ipsam.</p>
+                <div class="buttons">
+                    <a href="contact.html" class="content-button">contact</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="avantages">
+        <div class="avantages-cont">
+            <div class="avantages-top"></div>
+
+            <div class="avantages-bottom">
+                <div class="bottom-cont">
+                    <span>99%</span>
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>    
+
+                <div class="bottom-cont">
+                    <span>99%</span>
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>    
+
+                <div class="bottom-cont">
+                    <span>99%</span>
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-us item">
+        <div class=about-row>
+            <div class="about-images">
+                <img src="images/ncls.jpg">
+            </div>
+    
+            <div class="about-content">
+                <div class="about-text">
+                    <span>client says about us</span>
+                    <h3>Nicolas</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione corporis quisquam illo architecto esse quidem facere placeat atque vel quae, natus delectus molestias ipsum nulla nostrum sed odio deserun</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="write-us">
+        <div class="write-content">
+            <div class="write-left">
+                <span>don't miss our sales</span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+    
+            <div class="write-right">
+                <form action="about.html">
+                    <input type="email" placeholder="enter your email" id="write-email">
+                    <button type="submit" id="write-button"></button>
+                    <label for="button" id="label"><img src="images/send.png"></label>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+     <!------section footer------>
+
+     <footer>
+        <div class="footer-content">
+            <p>copyright &copy; 2024 béni ntambu. all rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/about.js"></script>
+</body>
+</html>

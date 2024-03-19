@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="essa.css">
+    <title>Document</title>
+</head>
+<body>
+    <model-viewer src="images/CAR.glb" auto-rotate id="car3d" camera-controls>
+    </model-viewer>
+
+    <script>
+        const modelViewer = document.querySelector('#car3d');
+
+        // Fonction pour orienter le modèle vers la position de la souris
+        function pointModelToMouse(event) {
+            const rect = modelViewer.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            // Calculez ici les coordonnées ou les transformations nécessaires
+            // et appliquez-les au modèle 3D.
+            // Par exemple, vous pouvez modifier la rotation du modèle en fonction de la position de la souris.
+            // modelViewer.setAttribute('rotation', votre nouvelle rotation ici);
+        }
+
+        // Ajoutez un écouteur d'événements pour le clic de la souris
+        window.addEventListener('click', (event) => {
+            pointModelToMouse(event);
+        });
+    </script>
+</body>
+</html>
